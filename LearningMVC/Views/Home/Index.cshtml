@@ -1,0 +1,24 @@
+﻿@model LearningMVC.Models.Friends
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Contact No.
+        </th>
+    </tr>
+    <tr>
+        <td>@Model.Name</td>
+        <td>
+            @Model.Contact
+        </td>
+    </tr>
+</table>
+
