@@ -1,0 +1,53 @@
+﻿@model LearningMVC.Models.EmpDepartment
+@{
+    ViewBag.Title = "AllData";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Data</h2>
+<h4>Friends List</h4>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Contact
+        </th>
+    </tr>
+    @foreach (var item in Model.friends)
+    {
+        <tr>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Contact
+            </td>
+        </tr>
+    }
+</table>
+
+<h4>Department List</h4>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            Department Id
+        </th>
+        <th>
+            Department Name
+        </th>
+    </tr>
+    @foreach(var item in Model.depatment)
+    {
+        <tr>
+            <td>
+                @item.DeptId
+            </td>
+            <td>
+                @item.DepartmentName
+            </td>
+        </tr>
+    }
+</table>
+
